@@ -12,7 +12,7 @@ function App() {
     return (
         <>
       
-        <Router>
+        <Router basename='codesoftUI'>
       <Routes>
         <Route path="/" element={<Home />} /> {/* Default Route */}
         <Route path="/courses" element={<Courses />} /> {/* Second Page Route */} 
@@ -21,7 +21,6 @@ function App() {
         <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
-       
         </>
     );
 }
