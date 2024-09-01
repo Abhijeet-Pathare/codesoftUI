@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Avatar,CardMedia, Typography } from '@mui/material';
+import { Box, Avatar, CardMedia, Typography } from '@mui/material';
 import css from '../images/css.png'
 import java from '../images/java.png'
 import html from '../images/html.png'
@@ -9,34 +9,35 @@ import sql from '../images/sql.png'
 
 
 const logos = [
-    {src:java,alt:'java'},
-    {src:react,alt:'react'},
-    {src:javascript,alt:'javascript'},
-    {src:sql,alt:'sql'},
-    {src:html,alt:'html'},
-    {src:css,alt:'css'}
+  { src: java, alt: 'java' },
+  { src: react, alt: 'react' },
+  { src: javascript, alt: 'javascript' },
+  { src: sql, alt: 'sql' },
+  { src: html, alt: 'html' },
+  { src: css, alt: 'css' }
 ]
 
 const LogoRow = () => {
   return (
-    <Box 
-      display="flex" 
-      justifyContent="center" 
-      alignItems="center" 
-      mt={4}
-      gap={4}
+    <Box
+      display="flex"
+      flexWrap="wrap"
+      justifyContent="center"
+      alignItems="center"
+      gap={2} // Adjust spacing between logos
+      p={2} // Padding around the row
     >
       {logos.map((logo, index) => (
         <Box key={index} textAlign="center">
           <Avatar
             src={logo.src}
             alt={logo.alt}
-            sx={{ 
-              width: 80, 
-              height: 80, 
-              bgcolor: 'transparent', 
+            sx={{
+              width: 80,
+              height: 80,
+              bgcolor: 'transparent',
               border: '2px solid #ddd',
-              p: 1 
+              p: 1
             }}
           />
           <Typography variant="subtitle1" sx={{ mt: 1 }}>
