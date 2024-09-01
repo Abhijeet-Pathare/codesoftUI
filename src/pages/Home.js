@@ -9,6 +9,7 @@ import video1Thumbnail from '../images/charOccurence.jpg.png';
 import video1Thumbnai2 from '../images/shallow.jpg.png';
 
 import './Home.css';
+import LogoRow from '../components/LogoRow';
 
 const Home = () => {
   const [abc, setabc] = useState(false);
@@ -63,18 +64,7 @@ const Home = () => {
             </Button>
           </Grid>
         )}
-        {!showUserDetails && (
-          <Grid item>
-            <Button
-              id="btn"
-              variant="contained"
-              color="primary"
-              onClick={handleShowUserDetails}
-            >
-              Show Users
-            </Button>
-          </Grid>
-        )}
+       
       </Grid>
 
       <Box mt={3}>
@@ -94,7 +84,7 @@ const Home = () => {
                 <CardActionArea component="a" href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank">
                   <CardMedia
                     component="img"
-                    height="140"
+                    height="230"
                     image={video.thumbnail}
                     alt={video.title}
                   />
@@ -109,8 +99,21 @@ const Home = () => {
           ))}
         </Grid>
       </Box>
+      <LogoRow />
     </Box>
   );
 };
 
 export default Home;
+// {!showUserDetails && (
+//     <Grid item>
+//       <Button
+//         id="btn"
+//         variant="contained"
+//         color="primary"
+//         onClick={handleShowUserDetails}
+//       >
+//         Show Users
+//       </Button>
+//     </Grid>
+//   )}

@@ -4,28 +4,34 @@ import CourseTable from '../components/CourseTable';
 import { useNavigate } from 'react-router-dom'; // Correct import statement
 import { useState } from 'react';
 import UserDetails from '../components/UserDetails';
+import { Box } from '@mui/material';
 
 const Courses = () => {
-    const [flag,setFlag] = useState(false);
-    const navigate = useNavigate(); // Initialize navigate function
+   const [flag, setFlag] = useState(false);
+   const navigate = useNavigate(); // Initialize navigate function
 
-    function handleClick (){
-       setFlag(!flag);
-       navigate('/courses'); // Navigate to the Courses route
-    } 
+   function handleClick() {
+      setFlag(!flag);
+      navigate('/courses'); // Navigate to the Courses route
+   }
 
-   
-    
-  return (
-    <div>
-       <Button onClick={handleClick}
-        variant="contained" color="primary"
-      >
-           Course Details
-        </Button>
-        {flag && <CourseTable />}
+
+
+   return (
+      <div>
+         <Box display="flex"
+            justifyContent="center"
+            alignItems="center" >
+      <Button onClick={handleClick}
+            variant="contained" color="primary"
+         >
+            Course Details
+         </Button>
+      </Box>
+      
+        { flag && <CourseTable /> }
        
-    </div>
+    </div >
   )
 }
 
