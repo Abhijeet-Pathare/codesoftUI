@@ -26,7 +26,7 @@ const Home = () => {
       thumbnail:video1Thumbnai2
     },
     // {
-    //   id: 'VIDEO_ID_3', // Replace with actual YouTube video ID
+    //  id: 'VIDEO_ID_3', // Replace with actual YouTube video ID
     //   title: 'Video Title 3',
     // },
   ];
