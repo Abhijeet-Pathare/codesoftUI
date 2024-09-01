@@ -82,7 +82,9 @@ function CourseTable() {
         </TableBody>
       </Table>
     </TableContainer>
-    <h3 style={{color:'red'}}>Date's yet to be confirmed.</h3>
+    <h3 style={{color:'red'}}>
+      Note : This data is only for testing purposes.
+      Date's yet to be confirmed.</h3>
     </>
   );
 }
