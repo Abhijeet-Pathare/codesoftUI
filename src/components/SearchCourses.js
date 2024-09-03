@@ -4,7 +4,9 @@ import { TextField, Button, Grid, Table, TableBody, TableCell, TableContainer, T
 
 const SearchCourses = () => {
     const [keyword, setKeyword] = useState('');
+    const filterarray = [];
     const [courses, setCourses] = useState([]);
+    const [filteredCourses, setFilteredCourses] = useState([]);
     const [showTableHeader, setShowTableHeader] = useState(false); // State to control the visibility of the table header
 
     const staticData = [
@@ -56,8 +58,14 @@ const SearchCourses = () => {
         } catch (error) {
             console.error("Error searching courses:", error);
             console.log(courses.length);
-            setCourses(staticData);
+            //setCourses(staticData);
             if(staticData.length >0){
+                staticData.map((course)=>
+                {if(((course.description).toLowerCase()).includes(keyword.toLowerCase()) || ((course.courseName).toLowerCase()).includes(keyword.toLowerCase())) {
+                    filterarray.push(course);
+                }},
+                setFilteredCourses(filterarray)
+            );
                 setShowTableHeader(true);
             }else{
                 setShowTableHeader(false);
@@ -101,7 +109,7 @@ const SearchCourses = () => {
                             </TableHead>
                         )}
                         <TableBody>
-                            {courses.map((course) => (
+                            {filteredCourses.map((course) => (
                                 <TableRow key={course.id}>
                                     <TableCell>{course.courseName}</TableCell>
                                     <TableCell>{course.description}</TableCell>
