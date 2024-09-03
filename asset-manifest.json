@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/codesoftUI/static/css/main.f5e57422.css",
-    "main.js": "/codesoftUI/static/js/main.b0b19419.js",
+    "main.js": "/codesoftUI/static/js/main.2cc8ef78.js",
     "static/js/453.27418f46.chunk.js": "/codesoftUI/static/js/453.27418f46.chunk.js",
     "static/media/shallow.jpg.png": "/codesoftUI/static/media/shallow.jpg.07c512f1e0ebcb327f8c.png",
     "static/media/charOccurence.jpg.png": "/codesoftUI/static/media/charOccurence.jpg.e1421be7a5e5284286c0.png",
@@ -10,11 +10,11 @@
     "static/media/css.png": "/codesoftUI/static/media/css.2ab79bf023a87655a988.png",
     "index.html": "/codesoftUI/index.html",
     "main.f5e57422.css.map": "/codesoftUI/static/css/main.f5e57422.css.map",
-    "main.b0b19419.js.map": "/codesoftUI/static/js/main.b0b19419.js.map",
+    "main.2cc8ef78.js.map": "/codesoftUI/static/js/main.2cc8ef78.js.map",
     "453.27418f46.chunk.js.map": "/codesoftUI/static/js/453.27418f46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5e57422.css",
-    "static/js/main.b0b19419.js"
+    "static/js/main.2cc8ef78.js"
   ]
 }
