@@ -7,6 +7,41 @@ const SearchCourses = () => {
     const [courses, setCourses] = useState([]);
     const [showTableHeader, setShowTableHeader] = useState(false); // State to control the visibility of the table header
 
+    const staticData = [
+        {
+          id: 1,
+          courseName: 'Java Fundamentals',
+          description: 'An introductory course on Java programming covering basic syntax, OOP concepts, and standard libraries.',
+          fee: 6500,
+          startDate: '2024-09-10',
+          endDate: '2024-10-15'
+        },
+        {
+          id: 2,
+          courseName: 'Advanced SQL',
+          description: 'Learn advanced SQL queries, database optimization techniques, and data modeling.',
+          fee: 4500,
+          startDate: '2024-09-15',
+          endDate: '2024-10-30'
+        },
+        {
+          id: 3,
+          courseName: 'React JS for Beginners',
+          description: 'A comprehensive course on React.js, including components, state management, and hooks.',
+          fee: 10000,
+          startDate: '2024-09-20',
+          endDate: '2024-11-05'
+        },
+        {
+          id: 4,
+          courseName: 'HTML & CSS Essentials',
+          description: 'Master the basics of HTML and CSS to create responsive and visually appealing web pages.',
+          fee: 3000,
+          startDate: '2024-09-25',
+          endDate: '2024-10-20'
+        }
+      ];
+
     const handleSearch = async () => {
         try {
             const response = await axios.get(`http://localhost:8080/api/courses/search?keyword=${keyword}`);
@@ -20,7 +55,13 @@ const SearchCourses = () => {
             }
         } catch (error) {
             console.error("Error searching courses:", error);
-            setShowTableHeader(false); // Hide the table header in case of error
+            console.log(courses.length);
+            setCourses(staticData);
+            if(staticData.length >0){
+                setShowTableHeader(true);
+            }else{
+                setShowTableHeader(false);
+            }
         }
     };
 
