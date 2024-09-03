@@ -10,6 +10,8 @@ import video1Thumbnai2 from '../images/shallow.jpg.png';
 
 import './Home.css';
 import LogoRow from '../components/LogoRow';
+import QuizPage from './QuizPage';
+import SearchCourses from '../components/SearchCourses';
 
 const Home = () => {
   const [abc, setabc] = useState(false);
@@ -50,7 +52,7 @@ const Home = () => {
       <Typography variant="h3" className="gradient-text" gutterBottom>
         Code Soft
       </Typography>
-
+        <SearchCourses />
       <Grid container spacing={2} justifyContent="center" className="btnCon">
         {!abc && (
           <Grid item>
@@ -99,12 +101,15 @@ const Home = () => {
           ))}
         </Grid>
       </Box>
+      
       <LogoRow />
     </Box>
   );
 };
 
 export default Home;
+
+//Kindly check the quizpage.js file and make the relevant code changes
 // {!showUserDetails && (
 //     <Grid item>
 //       <Button
