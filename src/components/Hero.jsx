@@ -1,29 +1,33 @@
-import React from 'react'
-import Typical from "react-typical";
+import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
   return (
-    <section className='hero' id='home'>  
-        <div className='hero-content'>
-            <h1>Hello, I'm <span className='highlight'>Abhijeet Pathare</span></h1>
-            <h2>
-              {""}
-              <Typical
-            loop={Infinity}
-            wrapper="b"
-            steps={[
-              "Java Backend Developer 💻", 1500,
-              "Spring Boot Enthusiast 🌱", 1500,
-              "MongoDB & Oracle Expert 🛢️", 1500,
-              "DevOps Learner 🚀", 1500,
-            ]}
-          />
-
-            </h2>
-            <a href="#projects" className='cta-btn'>View My Work</a>
-        </div>
+    <section className='hero' id='home'>
+      <div className='hero-content'>
+        <h1>Hello, I'm <span className='highlight'>Abhijeet Pathare</span></h1>
+        <h2>
+          <b>
+            <Typewriter
+              words={[
+                "Java Backend Developer 💻",
+                "Spring Boot Enthusiast 🌱",
+                "MongoDB & Oracle Expert 🛢️",
+                "DevOps Learner 🚀",
+              ]}
+              loop={0} // 0 = infinite
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </b>
+        </h2>
+        <a href="#projects" className='cta-btn'>View My Work</a>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
