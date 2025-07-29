@@ -1,20 +1,15 @@
 {
   "files": {
-    "main.css": "/codesoftUI/static/css/main.f5e57422.css",
-    "main.js": "/codesoftUI/static/js/main.cfd5e63a.js",
-    "static/js/453.27418f46.chunk.js": "/codesoftUI/static/js/453.27418f46.chunk.js",
-    "static/media/shallow.jpg.png": "/codesoftUI/static/media/shallow.jpg.07c512f1e0ebcb327f8c.png",
-    "static/media/charOccurence.jpg.png": "/codesoftUI/static/media/charOccurence.jpg.e1421be7a5e5284286c0.png",
-    "static/media/react.png": "/codesoftUI/static/media/react.3b5049ea7908e9da3ba0.png",
-    "static/media/java.png": "/codesoftUI/static/media/java.f91f26619da05654b2b8.png",
-    "static/media/css.png": "/codesoftUI/static/media/css.2ab79bf023a87655a988.png",
+    "main.css": "/codesoftUI/static/css/main.6c4ac34c.css",
+    "main.js": "/codesoftUI/static/js/main.886384c6.js",
+    "static/js/453.d5f878cc.chunk.js": "/codesoftUI/static/js/453.d5f878cc.chunk.js",
     "index.html": "/codesoftUI/index.html",
-    "main.f5e57422.css.map": "/codesoftUI/static/css/main.f5e57422.css.map",
-    "main.cfd5e63a.js.map": "/codesoftUI/static/js/main.cfd5e63a.js.map",
-    "453.27418f46.chunk.js.map": "/codesoftUI/static/js/453.27418f46.chunk.js.map"
+    "main.6c4ac34c.css.map": "/codesoftUI/static/css/main.6c4ac34c.css.map",
+    "main.886384c6.js.map": "/codesoftUI/static/js/main.886384c6.js.map",
+    "453.d5f878cc.chunk.js.map": "/codesoftUI/static/js/453.d5f878cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5e57422.css",
-    "static/js/main.cfd5e63a.js"
+    "static/css/main.6c4ac34c.css",
+    "static/js/main.886384c6.js"
   ]
 }
