@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/codesoft-ui/static/css/main.73ef567a.css",
-    "main.js": "/codesoft-ui/static/js/main.bb050925.js",
-    "static/js/453.d5f878cc.chunk.js": "/codesoft-ui/static/js/453.d5f878cc.chunk.js",
-    "index.html": "/codesoft-ui/index.html",
-    "main.73ef567a.css.map": "/codesoft-ui/static/css/main.73ef567a.css.map",
-    "main.bb050925.js.map": "/codesoft-ui/static/js/main.bb050925.js.map",
-    "453.d5f878cc.chunk.js.map": "/codesoft-ui/static/js/453.d5f878cc.chunk.js.map"
+    "main.css": "/codesoftUI/static/css/main.73ef567a.css",
+    "main.js": "/codesoftUI/static/js/main.44264520.js",
+    "static/js/453.d5f878cc.chunk.js": "/codesoftUI/static/js/453.d5f878cc.chunk.js",
+    "index.html": "/codesoftUI/index.html",
+    "main.73ef567a.css.map": "/codesoftUI/static/css/main.73ef567a.css.map",
+    "main.44264520.js.map": "/codesoftUI/static/js/main.44264520.js.map",
+    "453.d5f878cc.chunk.js.map": "/codesoftUI/static/js/453.d5f878cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73ef567a.css",
-    "static/js/main.bb050925.js"
+    "static/js/main.44264520.js"
   ]
 }
