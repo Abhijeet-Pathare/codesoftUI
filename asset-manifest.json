@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/codesoftUI/static/css/main.6c4ac34c.css",
-    "main.js": "/codesoftUI/static/js/main.886384c6.js",
-    "static/js/453.d5f878cc.chunk.js": "/codesoftUI/static/js/453.d5f878cc.chunk.js",
-    "index.html": "/codesoftUI/index.html",
-    "main.6c4ac34c.css.map": "/codesoftUI/static/css/main.6c4ac34c.css.map",
-    "main.886384c6.js.map": "/codesoftUI/static/js/main.886384c6.js.map",
-    "453.d5f878cc.chunk.js.map": "/codesoftUI/static/js/453.d5f878cc.chunk.js.map"
+    "main.css": "/static/css/main.73ef567a.css",
+    "main.js": "/static/js/main.da2cebba.js",
+    "static/js/453.d5f878cc.chunk.js": "/static/js/453.d5f878cc.chunk.js",
+    "index.html": "/index.html",
+    "main.73ef567a.css.map": "/static/css/main.73ef567a.css.map",
+    "main.da2cebba.js.map": "/static/js/main.da2cebba.js.map",
+    "453.d5f878cc.chunk.js.map": "/static/js/453.d5f878cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c4ac34c.css",
-    "static/js/main.886384c6.js"
+    "static/css/main.73ef567a.css",
+    "static/js/main.da2cebba.js"
   ]
 }
