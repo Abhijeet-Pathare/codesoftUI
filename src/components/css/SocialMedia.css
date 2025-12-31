@@ -1,0 +1,19 @@
+.social-section {
+  padding: 60px 40px;
+  background-color: #111827; /* Dark background */
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.social-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.social-subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #d1d5db;
+}

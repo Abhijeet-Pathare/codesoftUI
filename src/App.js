@@ -10,6 +10,7 @@ import Skills from './components/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Mentors from './components/Mentors';
+import SocialMedia from './components/SocialMedia';
 
 function App() {
   useEffect(() => {
@@ -22,12 +23,12 @@ function App() {
       <Navbar />
       <Hero />
       <Mentors />
+      <SocialMedia />
       <Courses />
       <Skills />
-      <Projects />
-      <About />
+      {/* <Projects /> */}
+      {/* <About /> */}
       <Contact />
-    
       </>
         
       
