@@ -2,19 +2,28 @@ import React from 'react'
 import './css/Courses.css'
 
 const Courses = () => {
-  const courseTopics = ['React.js',
+  const courseTopics = [
     'Core Java',
+    'JDBC',
     'Spring Boot',
+    'JavaScript',
+    'ES6',
+    'React js',
+    'HTML',
+    'CSS',
     'MongoDB',
     'SQL',
-    'HTML',
-    'CSS',];
+    ];
+
+  const courseTools = [
+    'GIT','GitHub','Postman','Debugging'
+  ]
   return (
     <section id='courses' className='courses-section'>
         <h2>Courses</h2>
         <div className='container' data-aos="fade-up">
         <h2 className="section-title">Java Full Stack Course</h2>
-        <p className="section-subtitle">Includes the following technologies:</p>
+        <p className="section-subtitle">You will learn technologies:</p>
         <ul className="course-list">
           {courseTopics.map((topic, index) => (
             <li key={index} className="course-item" data-aos="zoom-in">
@@ -23,6 +32,16 @@ const Courses = () => {
           ))}
         </ul>
       </div>
+      <div className='container' data-aos="fade-up">
+      <p className="section-subtitle">You will tools:</p>
+      <ul className='course-list'>
+          {courseTools.map((tool,index) => (
+            <li key={index} className='course-item' data-aos="zoom-in">
+              {tool}
+            </li>
+          ))}
+        </ul>
+        </div>
     </section>
   )
 }

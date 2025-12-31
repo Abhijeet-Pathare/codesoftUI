@@ -8,6 +8,7 @@ const Navbar = () => {
       <a href="#home" className="logo">Codesoft UI</a>
       <ul className="nav-links">
         <li><a href="#courses">Courses</a></li>
+        <li><a href="#mentors">Mentors</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
