@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/codesoftUI/static/css/main.92838455.css",
+    "main.css": "/codesoftUI/static/css/main.1970349c.css",
     "main.js": "/codesoftUI/static/js/main.618fa9b2.js",
     "static/js/453.d5f878cc.chunk.js": "/codesoftUI/static/js/453.d5f878cc.chunk.js",
     "index.html": "/codesoftUI/index.html",
-    "main.92838455.css.map": "/codesoftUI/static/css/main.92838455.css.map",
+    "main.1970349c.css.map": "/codesoftUI/static/css/main.1970349c.css.map",
     "main.618fa9b2.js.map": "/codesoftUI/static/js/main.618fa9b2.js.map",
     "453.d5f878cc.chunk.js.map": "/codesoftUI/static/js/453.d5f878cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92838455.css",
+    "static/css/main.1970349c.css",
     "static/js/main.618fa9b2.js"
   ]
 }
