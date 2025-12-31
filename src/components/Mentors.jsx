@@ -7,14 +7,14 @@ const mentors = [
     role: "Full Stack Developer",
     experience: "4+ Years Industry Experience",
     skills: "Java, Spring Boot, React, AWS, Microservices",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQHbF_7sRtBOGg/profile-displayphoto-scale_400_400/B4DZrgWtHpJAAg-/0/1764700641569?e=1769040000&v=beta&t=mM_jp-Q8T6mlOErp4f39lgZguxZBpB0vQ-CpSTUGdpE"
+    image: `${process.env.PUBLIC_URL}/images/abhijeet.jpg`
   },
   {
     name: "Ruturaj Kulkarni",
     role: "MERN Stack Developer",
     experience: "4+ Years Industry Experience",
     skills: "React, JavaScript, CSS, UI/UX",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQGq8_ONqNZvag/profile-displayphoto-scale_400_400/B4DZsi7fwSJAAg-/0/1765817582032?e=1769040000&v=beta&t=r0i54Q0eoohJxKxQ_IeR3yKXdLN5LsH5bSAUqwWH5oU"
+    image: `${process.env.PUBLIC_URL}/images/ruturaj.jpg`
   }
   
 ];
