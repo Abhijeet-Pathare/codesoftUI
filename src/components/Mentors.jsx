@@ -7,14 +7,14 @@ const mentors = [
     role: "Full Stack Developer",
     experience: "4+ Years Industry Experience",
     skills: "Java, Spring Boot, React, AWS, Microservices",
-    // image: `${process.env.PUBLIC_URL}/images/abhijeet.jpg`
+    image: `${process.env.PUBLIC_URL}/images/abhijeet.jpg`
   },
   {
     name: "Ruturaj Kulkarni",
     role: "MERN Stack Developer",
     experience: "4+ Years Industry Experience",
     skills: "React, JavaScript, CSS, UI/UX",
-    // image: `${process.env.PUBLIC_URL}/images/ruturaj.jpg`
+    image: `${process.env.PUBLIC_URL}/images/ruturaj.jpg`
   }
   
 ];
