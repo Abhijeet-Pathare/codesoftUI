@@ -1,50 +1,77 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #1a1a1a;
-    color: white;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .navbar-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 16px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 24px;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.2s ease;
-  }
-  
-  .nav-links li a:hover {
-    color: #00bcd4;
-  }
-  
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none; /* For mobile you can add a burger menu later */
-    }
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* Glassmorphism Effect */
+  background: rgba(255, 255, 255, 0.85);
+  /* Semi-transparent white */
+  backdrop-filter: blur(12px);
+  /* Blur effect behind */
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: black;
+  z-index: 1000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  /* Softer shadow */
+  display: block;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  /* Wider container for better spacing management */
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Gradient Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: none;
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 8px;
+}
+
+.menu-icon {
+  color: black !important;
+}
+
+/* Interactive Icons Hover Effect */
+.interactive-icon {
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.interactive-icon:hover {
+  transform: scale(1.15) !important;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+}
+
+/* CTA Button Hover */
+.cta-button {
+  transition: transform 0.2s ease !important;
+}
+
+.cta-button:hover {
+  transform: scale(1.05) !important;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  transform-origin: 0%;
+}
+
+/* .nav-links styles removed as they are now in the drawer */
