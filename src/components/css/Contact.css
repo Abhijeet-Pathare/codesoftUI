@@ -1,43 +1,43 @@
 .contact-section {
-    padding: 100px 20px;
-    background: linear-gradient(to right, #e0f7fa, #e1bee7);
-    text-align: center;
-  }
-  
-  .contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contact-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #4a148c;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 8px;
-    background: #f0f0f0;
-    font-size: 1rem;
-  }
-  
-  .contact-form button {
-    padding: 12px 30px;
-    background-color: #4a148c;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .contact-form button:hover {
-    background-color: #6a1b9a;
-  }
-  
+  padding: 100px 20px;
+  background: transparent;
+  /* Use global body gradient */
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4a148c;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px 30px;
+  background-color: #4a148c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #6a1b9a;
+}

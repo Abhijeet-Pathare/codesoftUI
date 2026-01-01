@@ -16,23 +16,24 @@ function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  
-// <AddCourse />
-    return (
-        <>
+
+  // <AddCourse />
+  return (
+    <>
       <Navbar />
       <Hero />
-      <Mentors />
-      <SocialMedia />
+
+      {/* <SocialMedia /> Removed as per user request (redundant with Navbar) */}
       <Courses />
-      <Skills />
+      {/* <Skills /> */}
+      <Mentors />
       {/* <Projects /> */}
       {/* <About /> */}
       <Contact />
-      </>
-        
-      
-    );
+    </>
+
+
+  );
 }
 
 export default App;
@@ -40,7 +41,7 @@ export default App;
 // {/* <Router basename='codesoftUI'>
 //       <Routes>
 //         <Route path="/" element={<Home />} /> {/* Default Route */}
-//         <Route path="/courses" element={<Courses />} /> {/* Second Page Route */} 
+//         <Route path="/courses" element={<Courses />} /> {/* Second Page Route */}
 //         <Route path="/addCourses" element={<AddCourse />} />
 //         <Route path="/users" element={<UserDetails />} />
 //         <Route path="/register" element={<Register />} />
