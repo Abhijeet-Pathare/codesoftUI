@@ -1,29 +1,49 @@
+import { useEffect } from 'react';
 import './App.css';
-import AddCourse from './components/AddCourse';
-import CourseTable from './components/CourseTable';
-import Register from './components/Register';
-import UserDetails from './components/UserDetails';
-import Courses from './pages/Courses';
-import Home from './pages/Home';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+// import About from './sections/About';
+import Contact from './sections/Contact';
+import Courses from './sections/Courses';
+import Hero from './sections/Hero';
+import Navbar from './components/Navbar';
+// import Projects from './sections/Projects';
+// import Skills from './sections/Skills';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Mentors from './sections/Mentors';
+// import SocialMedia from './components/SocialMedia';
 
 function App() {
-// <AddCourse />
-    return (
-        <>
-      
-        <Router basename='codesoftUI'>
-      <Routes>
-        <Route path="/" element={<Home />} /> {/* Default Route */}
-        <Route path="/courses" element={<Courses />} /> {/* Second Page Route */} 
-        <Route path="/addCourses" element={<AddCourse />} />
-        <Route path="/users" element={<UserDetails />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
-    </Router>
-        </>
-    );
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+  // <AddCourse />
+  return (
+    <>
+      <Navbar />
+      <Hero />
+
+      {/* <SocialMedia /> Removed as per user request (redundant with Navbar) */}
+      <Courses />
+      {/* <Skills /> */}
+      <Mentors />
+      {/* <Projects /> */}
+      {/* <About /> */}
+      <Contact />
+    </>
+
+
+  );
 }
 
 export default App;
 
+// {/* <Router basename='codesoftUI'>
+//       <Routes>
+//         <Route path="/" element={<Home />} /> {/* Default Route */}
+//         <Route path="/courses" element={<Courses />} /> {/* Second Page Route */}
+//         <Route path="/addCourses" element={<AddCourse />} />
+//         <Route path="/users" element={<UserDetails />} />
+//         <Route path="/register" element={<Register />} />
+//       </Routes>
+//     </Router> */}
