@@ -1,70 +1,176 @@
-# Getting Started with Create React App
+# Codesoft UI 🎓
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive landing page for Codesoft - a coding education platform. Built with React and Material-UI, featuring a clean design with glassmorphism effects, smooth animations, and an integrated contact form.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices
+- **Modern UI**: Glassmorphism effects, gradient animations, and smooth transitions
+- **Interactive Navbar**: Dynamic typewriter animation, progress bar on scroll
+- **Course Showcase**: Beautiful cards displaying available courses
+- **Mentor Profiles**: Showcase instructors with their qualifications
+- **Contact Form**: Integrated EmailJS for direct message delivery with validation
+- **Animations**: AOS (Animate On Scroll) and Framer Motion for engaging user experience
+- **Multi-language Support**: English and Marathi content
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** - UI library
+- **Material-UI (MUI)** - Component library
+- **EmailJS** - Email service integration
+- **AOS** - Scroll animations
+- **Framer Motion** - Advanced animations
+- **React Simple Typewriter** - Typing effect animations
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+src/
+├── components/         # Reusable UI components
+│   ├── Navbar.jsx     # Navigation bar with typewriter
+│   ├── SocialMedia.jsx
+│   └── LogoRow.js     # Technology logos
+├── sections/          # Page sections
+│   ├── Hero.jsx       # Landing section
+│   ├── Courses.jsx    # Course offerings
+│   ├── Mentors.jsx    # Instructor profiles
+│   ├── Contact.jsx    # Contact form
+│   ├── About.jsx
+│   ├── Skills.jsx
+│   └── Projects.jsx
+├── styles/            # CSS files
+│   ├── Navbar.css
+│   ├── Hero.css
+│   ├── Contact.css
+│   └── ...
+├── images/            # Image assets
+├── App.js             # Main application
+└── index.js           # Entry point
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v14 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/codesoftUI.git
+   cd codesoftUI
+   ```
 
-### `npm run eject`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Create a `.env` file in the root directory:
+   ```bash
+   REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+   REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+   REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### EmailJS Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To enable the contact form:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Sign up at [EmailJS](https://www.emailjs.com/)
+2. Create an Email Service (e.g., Gmail)
+3. Create an Email Template with these variables:
+   - `{{user_name}}` - Sender's name
+   - `{{user_email}}` - Sender's email
+   - `{{user_mobile}}` - Sender's phone number
+   - `{{message}}` - Message content
+4. Copy your Service ID, Template ID, and Public Key to `.env`
 
-## Learn More
+### Running the App
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Development mode:
+```bash
+npm start
+```
+Opens at [http://localhost:3000](http://localhost:3000)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Building for Production
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Creates an optimized production build in the `build` folder.
 
-### Analyzing the Bundle Size
+## 🌐 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### GitHub Pages
 
-### Making a Progressive Web App
+1. Update `package.json`:
+   ```json
+   "homepage": "https://your-username.github.io/codesoftUI"
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Deploy:
+   ```bash
+   npm run deploy
+   ```
 
-### Advanced Configuration
+### Environment Variables in Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If using GitHub Actions or CI/CD, add your EmailJS keys as repository secrets:
+- `REACT_APP_EMAILJS_SERVICE_ID`
+- `REACT_APP_EMAILJS_TEMPLATE_ID`
+- `REACT_APP_EMAILJS_PUBLIC_KEY`
 
-### Deployment
+## 📱 Features Breakdown
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Navbar
+- Responsive menu with drawer for mobile
+- Typewriter animation showcasing platform values
+- Social media links (Instagram, YouTube)
+- Scroll progress indicator
 
-### `npm run build` fails to minify
+### Hero Section
+- Eye-catching hero with gradient animations
+- Call-to-action buttons
+- Feature highlights with icons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Courses
+- Grid layout showcasing available courses
+- Hover effects and detailed descriptions
+- Technology stack for each course
+
+### Contact Form
+- Name, Email, Mobile (required)
+- Message (optional)
+- Real-time validation
+- EmailJS integration for instant delivery
+
+## 🐛 Troubleshooting
+
+### Contact Form Not Working
+
+1. **Environment Variables Not Loading**:
+   - Ensure `.env` is in the root directory
+   - Restart the development server after creating `.env`
+   - Variable names must start with `REACT_APP_`
+
+2. **Gmail API: Invalid Grant**:
+   - Go to EmailJS Dashboard → Email Services
+   - Reconnect your Gmail account
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👥 Contact
+
+- **Instagram**: [@codesoft__](https://www.instagram.com/codesoft__?igsh=MXNqbXNqbjRuOWUzdw==)
+- **YouTube**: [@maharashtrianCoder](https://www.youtube.com/@maharashtrianCoder)
+
+---
+
+Built with ❤️ by the Codesoft Team

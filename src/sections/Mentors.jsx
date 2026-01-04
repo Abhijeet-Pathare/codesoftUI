@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import './css/Mentors.css';
-import BusinessIcon from '@mui/icons-material/Business';
+import '../styles/Mentors.css';
+// import BusinessIcon from '@mui/icons-material/Business';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

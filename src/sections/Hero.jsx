@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Hero.css';
+import '../styles/Hero.css';
 import { motion } from 'framer-motion';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import CodeIcon from '@mui/icons-material/Code';
