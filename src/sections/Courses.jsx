@@ -9,6 +9,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
 import BuildIcon from '@mui/icons-material/Build';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Courses = () => {
 
@@ -90,6 +91,11 @@ const Courses = () => {
             </ul>
           </div>
         ))}
+      </div>
+
+      <div className="scroll-hint">
+        <span>Swipe to explore modules</span>
+        <ArrowForwardIcon sx={{ fontSize: 18 }} />
       </div>
     </section>
   )

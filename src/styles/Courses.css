@@ -1,6 +1,6 @@
 /* Courses Section Container */
 .courses-section {
-  padding: 80px 20px;
+  padding: 40px 20px;
   background: transparent;
   /* Let global dark bg show */
   color: #1f2937;
@@ -143,5 +143,51 @@
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
+  }
+
+  .curriculum-grid {
+    gap: 1rem;
+    padding-left: 20px;
+    /* Aligns first card with padding */
+    padding-right: 20px;
+    margin: 0 -20px;
+    /* Bleed out to edges */
+    width: calc(100% + 40px);
+  }
+
+  .module-card {
+    min-width: 80%;
+    /* Show 80% of current card + 20% of next */
+    padding: 1.5rem;
+  }
+}
+
+.scroll-hint {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #ff4c60;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  animation: fadeInOut 2s infinite;
+}
+
+@media (max-width: 768px) {
+  .scroll-hint {
+    display: flex;
+  }
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
   }
 }

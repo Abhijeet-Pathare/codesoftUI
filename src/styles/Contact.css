@@ -1,5 +1,5 @@
 .contact-section {
-  padding: 100px 20px;
+  padding: 10px 20px;
   background: transparent;
   /* Use global body gradient */
   text-align: center;
@@ -12,7 +12,7 @@
 
 .contact-container h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #4a148c;
 }
 
