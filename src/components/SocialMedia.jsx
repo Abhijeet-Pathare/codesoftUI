@@ -1,14 +1,14 @@
 import React from 'react'
-import '../styles/SocialMedia.css'
+import './css/SocialMedia.css'
 
 const SocialMedia = () => {
-  return (
-    <section className='social-section'>
-      <h2 className='social-title'>Connect with Codesoft</h2>
-      <p className="social-subtitle">
-        Follow us on social media for updates, tutorials, and more!
-      </p>
-      <div className="social-icons">
+    return (
+        <section className='social-section'>
+            <h2 className='social-title'>Connect with Codesoft</h2>
+            <p className="social-subtitle">
+                Follow us on social media for updates, tutorials, and more!
+            </p>
+            <div className="social-icons">
         <a
           href="https://www.instagram.com/codesoft__?igsh=MXNqbXNqbjRuOWUzdw=="
           target="_blank"
@@ -33,8 +33,8 @@ const SocialMedia = () => {
           />
         </a>
       </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default SocialMedia

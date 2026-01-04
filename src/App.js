@@ -1,16 +1,16 @@
 import { useEffect } from 'react';
 import './App.css';
-// import About from './sections/About';
-import Contact from './sections/Contact';
-import Courses from './sections/Courses';
-import Hero from './sections/Hero';
+import About from './components/About';
+import Contact from './components/Contact';
+import Courses from './components/Courses';
+import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-// import Projects from './sections/Projects';
-// import Skills from './sections/Skills';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Mentors from './sections/Mentors';
-// import SocialMedia from './components/SocialMedia';
+import Mentors from './components/Mentors';
+import SocialMedia from './components/SocialMedia';
 
 function App() {
   useEffect(() => {

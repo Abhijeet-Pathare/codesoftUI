@@ -5,7 +5,6 @@
   "homepage": "https://abhijeetpathare.github.io/codesoftUI",
   "dependencies": {
     "@chakra-ui/react": "^3.23.0",
-    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^5.16.7",

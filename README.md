@@ -1,176 +1,70 @@
-# Codesoft UI 🎓
+# Getting Started with Create React App
 
-A modern, responsive landing page for Codesoft - a coding education platform. Built with React and Material-UI, featuring a clean design with glassmorphism effects, smooth animations, and an integrated contact form.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## ✨ Features
+## Available Scripts
 
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices
-- **Modern UI**: Glassmorphism effects, gradient animations, and smooth transitions
-- **Interactive Navbar**: Dynamic typewriter animation, progress bar on scroll
-- **Course Showcase**: Beautiful cards displaying available courses
-- **Mentor Profiles**: Showcase instructors with their qualifications
-- **Contact Form**: Integrated EmailJS for direct message delivery with validation
-- **Animations**: AOS (Animate On Scroll) and Framer Motion for engaging user experience
-- **Multi-language Support**: English and Marathi content
+In the project directory, you can run:
 
-## 🛠️ Tech Stack
+### `npm start`
 
-- **React** - UI library
-- **Material-UI (MUI)** - Component library
-- **EmailJS** - Email service integration
-- **AOS** - Scroll animations
-- **Framer Motion** - Advanced animations
-- **React Simple Typewriter** - Typing effect animations
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 📁 Project Structure
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```
-src/
-├── components/         # Reusable UI components
-│   ├── Navbar.jsx     # Navigation bar with typewriter
-│   ├── SocialMedia.jsx
-│   └── LogoRow.js     # Technology logos
-├── sections/          # Page sections
-│   ├── Hero.jsx       # Landing section
-│   ├── Courses.jsx    # Course offerings
-│   ├── Mentors.jsx    # Instructor profiles
-│   ├── Contact.jsx    # Contact form
-│   ├── About.jsx
-│   ├── Skills.jsx
-│   └── Projects.jsx
-├── styles/            # CSS files
-│   ├── Navbar.css
-│   ├── Hero.css
-│   ├── Contact.css
-│   └── ...
-├── images/            # Image assets
-├── App.js             # Main application
-└── index.js           # Entry point
-```
+### `npm test`
 
-## 🚀 Getting Started
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Prerequisites
+### `npm run build`
 
-- Node.js (v14 or higher)
-- npm or yarn
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Installation
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/codesoftUI.git
-   cd codesoftUI
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+### `npm run eject`
 
-3. Create a `.env` file in the root directory:
-   ```bash
-   REACT_APP_EMAILJS_SERVICE_ID=your_service_id
-   REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
-   REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
-   ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### EmailJS Configuration
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-To enable the contact form:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1. Sign up at [EmailJS](https://www.emailjs.com/)
-2. Create an Email Service (e.g., Gmail)
-3. Create an Email Template with these variables:
-   - `{{user_name}}` - Sender's name
-   - `{{user_email}}` - Sender's email
-   - `{{user_mobile}}` - Sender's phone number
-   - `{{message}}` - Message content
-4. Copy your Service ID, Template ID, and Public Key to `.env`
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Running the App
+## Learn More
 
-Development mode:
-```bash
-npm start
-```
-Opens at [http://localhost:3000](http://localhost:3000)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Building for Production
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```bash
-npm run build
-```
+### Code Splitting
 
-Creates an optimized production build in the `build` folder.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## 🌐 Deployment
+### Analyzing the Bundle Size
 
-### GitHub Pages
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-1. Update `package.json`:
-   ```json
-   "homepage": "https://your-username.github.io/codesoftUI"
-   ```
+### Making a Progressive Web App
 
-2. Deploy:
-   ```bash
-   npm run deploy
-   ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Environment Variables in Production
+### Advanced Configuration
 
-If using GitHub Actions or CI/CD, add your EmailJS keys as repository secrets:
-- `REACT_APP_EMAILJS_SERVICE_ID`
-- `REACT_APP_EMAILJS_TEMPLATE_ID`
-- `REACT_APP_EMAILJS_PUBLIC_KEY`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## 📱 Features Breakdown
+### Deployment
 
-### Navbar
-- Responsive menu with drawer for mobile
-- Typewriter animation showcasing platform values
-- Social media links (Instagram, YouTube)
-- Scroll progress indicator
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### Hero Section
-- Eye-catching hero with gradient animations
-- Call-to-action buttons
-- Feature highlights with icons
+### `npm run build` fails to minify
 
-### Courses
-- Grid layout showcasing available courses
-- Hover effects and detailed descriptions
-- Technology stack for each course
-
-### Contact Form
-- Name, Email, Mobile (required)
-- Message (optional)
-- Real-time validation
-- EmailJS integration for instant delivery
-
-## 🐛 Troubleshooting
-
-### Contact Form Not Working
-
-1. **Environment Variables Not Loading**:
-   - Ensure `.env` is in the root directory
-   - Restart the development server after creating `.env`
-   - Variable names must start with `REACT_APP_`
-
-2. **Gmail API: Invalid Grant**:
-   - Go to EmailJS Dashboard → Email Services
-   - Reconnect your Gmail account
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👥 Contact
-
-- **Instagram**: [@codesoft__](https://www.instagram.com/codesoft__?igsh=MXNqbXNqbjRuOWUzdw==)
-- **YouTube**: [@maharashtrianCoder](https://www.youtube.com/@maharashtrianCoder)
-
----
-
-Built with ❤️ by the Codesoft Team
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
