@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './css/Navbar.css';
+import '../styles/Navbar.css';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -61,7 +61,6 @@ const Navbar = () => {
           <a href="#home" className="logo gradient-text">Codesoft</a>
         </Box>
 
-        {/* Center Section: Typing Animation */}
         {/* Center Section: Typing Animation */}
         <Box
           sx={{
@@ -137,6 +136,38 @@ const Navbar = () => {
           {DrawerList}
         </Drawer>
       </div>
+
+      {/* Mobile Top Header Text */}
+      <Box
+        sx={{
+          display: { xs: 'flex', md: 'none' },
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+          py: 1,
+          borderBottom: '1px solid rgba(0,0,0,0.05)',
+          width: '100%'
+        }}
+      >
+        <Box component="div" sx={{ fontSize: '1rem', fontWeight: 700, color: 'black' }}>
+          नमस्कार, मी तुमचा <span style={{ color: '#ff4c60' }}>Tech Guru</span>
+        </Box>
+        <Box component="div" sx={{ fontSize: '0.85rem', fontWeight: 500, color: '#333' }}>
+          <Typewriter
+            words={[
+              "आम्ही शास्त्रशुद्ध पद्धतीने coding शिकवतो.",
+              "Rooted in values, built for the future"
+            ]}
+            loop={0}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </Box>
+      </Box>
 
       {/* Scroll Progress Bar */}
       <motion.div

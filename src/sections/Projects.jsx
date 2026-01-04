@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/Projects.css'
+import '../styles/Projects.css'
 
 const Projects = () => {
   const projects = [
@@ -18,18 +18,18 @@ const Projects = () => {
   ];
   return (
     <section id="projects" className="projects-section">
-    <div className="container">
-      <h2 className="section-title">My Projects</h2>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          </div>
-        ))}
+      <div className="container">
+        <h2 className="section-title">My Projects</h2>
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <div key={index} className="project-card">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   )
 }
 

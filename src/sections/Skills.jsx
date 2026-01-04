@@ -1,12 +1,12 @@
 import React from 'react'
-import './css/Skills.css'
+import '../styles/Skills.css'
 
 const Skills = () => {
   const skills = ['Java', 'Spring Boot', 'React', 'HTML', 'CSS', 'MongoDB', 'SQL', 'Git', 'Docker'];
 
   return (
     <section id='skills' className='skills-section'>
-        <div className="container">
+      <div className="container">
         <h2 className="section-title">My Skills</h2>
         <div className="skills-grid">
           {skills.map((skill, index) => (
