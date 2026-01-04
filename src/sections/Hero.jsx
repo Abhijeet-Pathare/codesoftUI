@@ -94,7 +94,7 @@ const Hero = () => {
           <h2 className='section-heading'>🎓 Who Can Join?</h2>
           <div className='list-item'>
             <SchoolIcon className='list-icon' />
-            <span>12th pass / Diploma / Degree students</span>
+            <span>Curious minds with a hunger for innovation and growth</span>
           </div>
           <div className='list-item'>
             <RocketLaunchIcon className='list-icon' />
