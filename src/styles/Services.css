@@ -104,25 +104,26 @@
 
 .modal-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
+    /* Shorthand for top, right, bottom, left: 0 */
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(8px);
     z-index: 10001;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    display: grid;
+    place-items: center;
+    /* Robust centering */
 }
 
 .modal-content {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(15px);
-    width: 100%;
+    width: 92%;
+    /* Ensure visible gaps on sides */
     max-width: 1000px;
     max-height: 90vh;
+    margin: auto;
     border-radius: 24px;
     position: relative;
     overflow: hidden;
@@ -160,10 +161,9 @@
 }
 
 .modal-inner-content {
-    padding: 20px;
-    /* Reduced from 60px 40px */
+    padding: 30px 15px;
     overflow-y: auto;
-    /* Enable scrolling here */
+    overflow-x: hidden;
     flex: 1;
 }
 
