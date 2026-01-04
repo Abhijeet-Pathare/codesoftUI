@@ -9,8 +9,6 @@ import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button'; // Import Button
 import MenuIcon from '@mui/icons-material/Menu';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion, useScroll as useScrollFramer } from "framer-motion"; // Rename to avoid conflict with react-scroll if needed, though Link is from react-scroll
 
@@ -109,27 +107,6 @@ const Navbar = () => {
           >
             Join Now
           </Button>
-
-          <IconButton
-            component="a"
-            href="https://www.instagram.com/codesoft__?igsh=MXNqbXNqbjRuOWUzdw=="
-            target="_blank"
-            rel="noopener noreferrer"
-            className="interactive-icon"
-            sx={{ color: '#E1306C' }}
-          >
-            <InstagramIcon sx={{ fontSize: 40 }} />
-          </IconButton>
-          <IconButton
-            component="a"
-            href="https://www.youtube.com/@maharashtrianCoder"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="interactive-icon"
-            sx={{ color: '#FF0000' }}
-          >
-            <YouTubeIcon sx={{ fontSize: 40 }} />
-          </IconButton>
         </Box>
 
         <Drawer open={open} onClose={toggleDrawer(false)}>

@@ -10,6 +10,8 @@ import Navbar from './components/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Mentors from './sections/Mentors';
+import WhatsAppFloater from './components/WhatsAppFloater';
+import Footer from './components/Footer';
 // import SocialMedia from './components/SocialMedia';
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
       {/* <Projects /> */}
       {/* <About /> */}
       <Contact />
+      <WhatsAppFloater />
+      <Footer />
     </>
 
 
