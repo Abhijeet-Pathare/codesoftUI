@@ -8,9 +8,9 @@ import Navbar from './components/Navbar';
 // import Skills from './sections/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import WhatsAppFloater from './components/WhatsAppFloater';
 import Footer from './components/Footer';
 import Services from './sections/Services';
+import CompilerFloater from './components/CompilerFloater';
 // import SocialMedia from './components/SocialMedia';
 
 function App() {
@@ -26,11 +26,11 @@ function App() {
 
       {/* <SocialMedia /> Removed as per user request (redundant with Navbar) */}
       <Services />
+      <CompilerFloater />
       {/* <Skills /> */}
       {/* <Projects /> */}
       {/* <About /> */}
       <Contact />
-      <WhatsAppFloater />
       <Footer />
     </>
 
